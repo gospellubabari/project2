@@ -7,7 +7,7 @@ messageForm.addEventListener('submit', (event) => {
 
   const fullNameInputTag = document.getElementById('fname');
   const emailInputTag = document.getElementById('email');
-  const messageTextAreaTag = document.getElementById('message');
+  const messageTextareaTag = document.getElementById('message');
 
 
   //   if (fullName == '') {
@@ -22,12 +22,12 @@ messageForm.addEventListener('submit', (event) => {
 
   fullNameInputTag.style.backgroundColor = '#fff';
   emailInputTag.style.backgroundColor = '#fff';
-  messageTextAreaTag.style.backgroundColor = '#fff';
+  messageTextareaTag.style.backgroundColor = '#fff';
 
 
   let fullName = fullNameInputTag.value;
   let email = emailInputTag.value;
-  let messsage = messageTextAreaTag.value;
+  let message = messageTextareaTag.value;
 
 
 
@@ -45,7 +45,7 @@ messageForm.addEventListener('submit', (event) => {
     //reset fields
     fullNameInputTag.value = '';
     emailInputTag.value = '';
-    messageTextAreaTag.value = '';
+    messageTextareaTag.value = '';
 
   } else {
 
@@ -53,8 +53,9 @@ messageForm.addEventListener('submit', (event) => {
       fullNameInputTag.style.backgroundColor = 'rgb(255 0 0 / 15%)';
     } else if (email == '') {
       emailInputTag.style.backgroundColor = 'rgb(255 0 0 / 15%)';
+
     } else if (message == '') {
-      messageTextAreaTag.style.backgroundColor = 'rgb(255 0 0 / 15%)';
+      messageTextareaTag.style.backgroundColor = 'rgb(255 0 0 / 15%)';
     } else {
       pass;
     }
