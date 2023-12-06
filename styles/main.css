@@ -1,7 +1,8 @@
-html{
+html {
     background-image: linear-gradient(#fc5e55, #fa4083);
 }
-body{
+
+body {
     font-family: 'Roboto', sans-serif;
     background-image: url('/images/image-lion-background.png');
     color: white;
@@ -9,15 +10,16 @@ body{
     background-repeat: no-repeat;
     background-position: top center;
 }
-.container{
+
+.container {
     width: 1024px;
     min-height: 300px;
     margin-left: auto;
     margin-right: auto;
 }
 
-header{
-    
+header {
+
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
@@ -27,7 +29,7 @@ header{
     margin-bottom: 20px;
 }
 
-main{
+main {
     margin-bottom: 50px;
     min-height: 300px;
     align-items: center;
@@ -35,24 +37,28 @@ main{
 }
 
 
-h1{
+h1 {
     font-size: 80px;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 1rem;
     text-shadow: 0 2px 2px rgb(0, 0, 0, 0.9);
 }
-h2{
+
+h2 {
     font-size: 2rem;
     font-family: 'Playfair Display', serif;
 }
-p{
+
+p {
     line-height: 1.75rem;
     margin-bottom: 0.5rem;
 }
-.cards i{
+
+.cards i {
     font-size: 100px;
 }
-.my-button{
+
+.my-button {
     color: #fa4083;
     text-decoration: none;
     text-transform: capitalize;
@@ -65,26 +71,71 @@ p{
     border-radius: 1000px 2px 1000px 2px;
     box-shadow: 0 2px 2px rgb(0, 0, 0, 0.9);
 }
-.my-button:hover{
+
+.my-button:hover {
     color: black;
     font-weight: bold;
     background-color: rgba(5, 185, 5, 0.867);
     transition-duration: 1s;
 }
 
-.testimonials{
+.testimonials {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.tbox{
+
+.tbox {
     width: 47%;
     padding: 50px;
     border: 1px solid white;
     box-sizing: border-box;
     margin-bottom: 50px;
 }
-.tbox p:last-of-type{
+
+.tbox p:last-of-type {
     font-size: smaller;
     padding-left: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+ul ul {
+    display: none;
+    z-index: 9999;
+    position: absolute;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul ul li {
+    color: #fff;
+    padding-top: 10px;
+    margin-bottom: 3px;
+    width: 120px;
+    
+}
+
+ul ul li:hover{
+    color: #000;
+}
+
+.li-button {
+    border: 1px solid silver;
+    border-radius: 10px;
+    padding: 11px 11px;
+}
+.one{
+    margin-top: 8px
 }
